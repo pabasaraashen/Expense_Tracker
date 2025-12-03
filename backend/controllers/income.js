@@ -2,5 +2,5 @@
 
 
 exports.addIncome = async (req, res) => {
-    console.log("Income data received:", req.body);
+    console.log("Income data received", req.body);
 }
