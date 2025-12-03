@@ -4,6 +4,7 @@ const e = require('cors');
 // load .env from this backend folder explicitly so dotenv works no matter where node is started from
 require('dotenv').config({ path: __dirname + '/.env' });
 const db = require('./db/db');
+const { readdirSync } = require('fs');
 const app = express();
 
 const PORT = process.env.PORT
@@ -11,6 +12,9 @@ const PORT = process.env.PORT
 //middleware
 app.use(express.json());
 app.use(cors());
+
+//routes
+readdirSync('./routes').map((route)=> app.use('/api/v1', require('./routes/' + route)));
 
 app.get('/', (req, res) => {
     res.send('Hello World!')
