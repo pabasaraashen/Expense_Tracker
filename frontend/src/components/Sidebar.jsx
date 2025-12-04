@@ -64,7 +64,6 @@ export default function Sidebar(){
         <MenuItem to="/expenses">🧾 Expenses</MenuItem>
       </Menu>
 
-      <div style={{marginTop:'auto', fontSize:13, color:'#6b6b85'}}>↩ Sign Out</div>
     </Aside>
   );
 }
