@@ -35,7 +35,7 @@ const Avatar = styled.div`
 `;
 
 const Name = styled.div`
-  font-weight:800; color:var(--text);
+  font-weight:700; color:var(--text);
 `;
 
 const Menu = styled.nav`
