@@ -29,12 +29,12 @@ export default function DashboardPage({ incomes, expenses, loading, onDeleteInco
     <Wrapper>
       <Header>Dashboard</Header>
       <Row>
-        <Col style={{flex:1}}>
+        <Col style={{flex:1, marginTop:20}}>
           <div style={{display:'flex', alignItems:'center', justifyContent:'center', minHeight:220}}>
             <DashboardChart incomes={incomes} expenses={expenses} />
           </div>
         </Col>
-        <Col style={{flex:1}}>
+        <Col style={{flex:1, marginTop:20}}>
           <div style={{background:'#fff', padding:12, borderRadius:12}}>
             <h4 style={{margin:0}}>Recent History</h4>
             {/* show merged recent incomes+expenses */}
@@ -52,15 +52,15 @@ export default function DashboardPage({ incomes, expenses, loading, onDeleteInco
         </Col>
       </Row>
 
-      <Row style={{marginTop:18}}>
+      <Row style={{marginTop:20, textAlign:'center'}}>
         <Col>
-          <div style={{background:'#fff', padding:18, borderRadius:12}}>
+          <div style={{background:'#e8e8e8', padding:18, borderRadius:12}}>
             <h4>Total Income</h4>
             <div style={{fontSize:28, fontWeight:700}}>${totalIncome}</div>
           </div>
         </Col>
         <Col>
-          <div style={{background:'#fff', padding:18, borderRadius:12}}>
+          <div style={{background:'#e8e8e8', padding:18, borderRadius:12}}>
             <h4>Total Expense</h4>
             <div style={{fontSize:28, fontWeight:700}}>${totalExpense}</div>
           </div>
@@ -68,7 +68,7 @@ export default function DashboardPage({ incomes, expenses, loading, onDeleteInco
       </Row>
 
       <div style={{marginTop:20, textAlign:'center'}}>
-        <div style={{display:'inline-block', background:'#fff', padding:18, borderRadius:12}}>
+        <div style={{ background:'#e8e8e8', padding:18, borderRadius:12}}>
           <h4>Total Balance</h4>
           <div style={{fontSize:32, fontWeight:800, color: balance<0? '#ff4d4f':'#42AD00'}}>${balance}</div>
         </div>
