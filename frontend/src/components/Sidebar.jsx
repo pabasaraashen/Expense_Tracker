@@ -55,13 +55,7 @@ const MenuItem = styled(NavLink)`
 export default function Sidebar(){
   return (
     <Aside>
-      <Profile>
-        <Avatar>MM</Avatar>
-        <div>
-          <Name>Mike</Name>
-          <div style={{fontSize:12, color:'#9a9aa8'}}>Your Money</div>
-        </div>
-      </Profile>
+      
 
       <Menu>
         <MenuItem to="/" end>📊 Dashboard</MenuItem>
