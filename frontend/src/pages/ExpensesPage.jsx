@@ -18,7 +18,7 @@ export default function ExpensesPage({ expenses, onAdd, onDelete, loading, savin
         <div style={{flex:1}}>
           <ExpenseForm onSubmit={onAdd} loading={saving} />
           <div style={{background:'#fff', padding:16, borderRadius:12, marginBottom:12}}>
-        <h3 style={{margin:0, textAlign:'center', fontSize:18}}>Total Expense: <span style={{color:'#d61d1a', fontSize:28, fontWeight:800}}>${total}</span></h3>
+        <h3 style={{margin:25, textAlign:'center', fontSize:18}}>Total Expense: <span style={{color:'#d61d1a', fontSize:28, fontWeight:800}}>${total}</span></h3>
       </div>
         </div>
         <div style={{flex:1}}>

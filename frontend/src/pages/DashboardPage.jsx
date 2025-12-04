@@ -37,17 +37,19 @@ export default function DashboardPage({ incomes, expenses, loading, onDeleteInco
         <Col style={{flex:1, marginTop:20}}>
           <div style={{background:'#fff', padding:12, borderRadius:12}}>
             <h4 style={{margin:0}}>Recent History</h4>
-            {/* show merged recent incomes+expenses */}
-            {(() => {
-              const merged = [
-                ...incomes.map(i => ({...i, _kind: 'income'})),
-                ...expenses.map(e => ({...e, _kind: 'expense'}))
-              ].sort((a,b)=> new Date(b.date) - new Date(a.date));
-              const recent = merged.slice(0,5);
-              return (
-                <TransactionsList items={recent} loading={loading} />
-              );
-            })()}
+            <div style={{maxHeight:300, overflowY:'auto', marginTop:8}}>
+              {/* show merged recent incomes+expenses */}
+              {(() => {
+                const merged = [
+                  ...incomes.map(i => ({...i, _kind: 'income'})),
+                  ...expenses.map(e => ({...e, _kind: 'expense'}))
+                ].sort((a,b)=> new Date(b.date) - new Date(a.date));
+                const recent = merged.slice(0,5);
+                return (
+                  <TransactionsList items={recent} loading={loading} />
+                );
+              })()}
+            </div>
           </div>
         </Col>
       </Row>
