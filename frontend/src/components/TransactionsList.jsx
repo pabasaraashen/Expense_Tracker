@@ -11,14 +11,7 @@ export default function TransactionsList({ items=[], onDelete, loading }){
           <div>
             <div style={{display:'flex', alignItems:'center', gap:10}}>
               <div style={{fontWeight:700, fontSize:18}}>{it.title}</div>
-              {/* badge: determine kind */}
-              {(() => {
-                const kind = it._kind || (it.type ? (String(it.type).toLowerCase().includes('income') ? 'income' : 'expense') : 'expense');
-                const bg = kind === 'income' ? 'var(--positive)' : 'var(--danger)';
-                return (
-                  <span style={{background:bg, color:'#fff', padding:'4px 10px', borderRadius:10, fontSize:13, fontWeight:700}}>{kind === 'income' ? 'Income' : 'Expense'}</span>
-                )
-              })()}
+              
             </div>
             <div style={{fontSize:14, color:'var(--muted)'}}>{new Date(it.date).toLocaleDateString()}</div>
           </div>
