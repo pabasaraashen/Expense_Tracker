@@ -79,7 +79,7 @@ function App(){
             <Route path="/" element={<DashboardPage incomes={incomes} expenses={expenses} loading={loading} onDeleteIncome={handleDeleteIncome} onDeleteExpense={handleDeleteExpense} />} />
             <Route path="/incomes" element={<IncomesPage incomes={incomes} onAdd={handleAddIncome} onDelete={handleDeleteIncome} loading={loading} saving={saving} />} />
             <Route path="/expenses" element={<ExpensesPage expenses={expenses} onAdd={handleAddExpense} onDelete={handleDeleteExpense} loading={loading} saving={saving} />} />
-            <Route path="/transactions" element={<div><h2>All Transactions</h2><TransactionsList items={[...incomes, ...expenses].sort((a,b)=> new Date(b.date)-new Date(a.date))} onDelete={() => {}} loading={loading} /></div>} />
+            <Route path="/transactions" element={<div><h2 style={{fontSize:28}}>All Transactions</h2><div style={{maxHeight:600, overflowY:'auto'}}><TransactionsList items={[...incomes, ...expenses].sort((a,b)=> new Date(b.date)-new Date(a.date))} onDelete={() => {}} loading={loading} /></div></div>} />
           </Routes>
         </Main>
       </Layout>
