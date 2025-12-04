@@ -58,7 +58,7 @@ export default function Sidebar(){
       
 
       <Menu>
-        <MenuItem to="/" end> Dashboard</MenuItem>
+        <MenuItem to="/"> Dashboard</MenuItem>
         <MenuItem to="/transactions"> View Transactions</MenuItem>
         <MenuItem to="/incomes"> Incomes</MenuItem>
         <MenuItem to="/expenses"> Expenses</MenuItem>
