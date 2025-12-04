@@ -18,7 +18,7 @@ export default function IncomesPage({ incomes, onAdd, onDelete, loading, saving 
         <div style={{flex:1}}>
           <IncomeForm onSubmit={onAdd} loading={saving} />
           <div style={{background:'#fff', padding:16, borderRadius:12, marginBottom:12}}>
-        <h3 style={{margin:20, textAlign:'center', fontSize:18}}>Total Income: <span style={{color:'#0f0f0f', fontSize:28, fontWeight:800}}>${total}</span></h3>
+        <h3 style={{margin:25, textAlign:'center', fontSize:18}}>Total Income: <span style={{color:'#14b324', fontSize:28, fontWeight:800}}>${total}</span></h3>
       </div>
         </div>
         <div style={{flex:1}}>
