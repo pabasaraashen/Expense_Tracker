@@ -70,7 +70,7 @@ export default function DashboardPage({ incomes, expenses, loading, onDeleteInco
       <div style={{marginTop:20, textAlign:'center'}}>
         <div style={{ background:'#e8e8e8', padding:18, borderRadius:12}}>
           <h4>Total Balance</h4>
-          <div style={{fontSize:32, fontWeight:800, color: balance<0? '#ff4d4f':'#42AD00'}}>${balance}</div>
+          <div style={{fontSize:32, fontWeight:800, color: balance<0? '#ff4d4f':'#347d06'}}>${balance}</div>
         </div>
       </div>
       
