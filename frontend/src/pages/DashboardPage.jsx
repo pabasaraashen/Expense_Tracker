@@ -30,7 +30,9 @@ export default function DashboardPage({ incomes, expenses, loading, onDeleteInco
       <Header>Dashboard</Header>
       <Row>
         <Col style={{flex:1}}>
-          <DashboardChart incomes={incomes} expenses={expenses} />
+          <div style={{display:'flex', alignItems:'center', justifyContent:'center', minHeight:220}}>
+            <DashboardChart incomes={incomes} expenses={expenses} />
+          </div>
         </Col>
         <Col style={{flex:1}}>
           <div style={{background:'#fff', padding:12, borderRadius:12}}>
