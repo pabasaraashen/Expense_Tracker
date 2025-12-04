@@ -9,7 +9,7 @@ export default function DashboardChart({ incomes=[], expenses=[] }){
   const totalExp = expenses.reduce((s,e)=> s + Number(e.amount || 0), 0);
   const data = {
     labels: ['Incomes','Expenses'],
-    datasets:[{ data: [totalInc, totalExp], backgroundColor:['#42AD00','#FF6692'] }]
+    datasets:[{ data: [totalInc, totalExp], backgroundColor:['#347d06','#bf0606'] }]
   };
   return <div style={{width: '100%', maxWidth:420}}><Doughnut data={data} /></div>;
 }

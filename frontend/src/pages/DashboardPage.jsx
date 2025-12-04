@@ -27,7 +27,7 @@ export default function DashboardPage({ incomes, expenses, loading, onDeleteInco
 
   return (
     <Wrapper>
-      <Header>Dashboard</Header>
+      <Header><h2>Dashboard</h2></Header>
       <Row>
         <Col style={{flex:1, marginTop:20}}>
           <div style={{display:'flex', alignItems:'center', justifyContent:'center', minHeight:220}}>
