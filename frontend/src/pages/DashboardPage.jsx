@@ -37,7 +37,7 @@ export default function DashboardPage({ incomes, expenses, loading, onDeleteInco
         <Col style={{flex:1, marginTop:20}}>
           <div style={{background:'#fff', padding:12, borderRadius:12}}>
             <h4 style={{margin:0}}>Recent History</h4>
-            <div style={{maxHeight:300, overflowY:'auto', marginTop:8}}>
+            <div style={{maxHeight:300, overflowY:'auto', marginTop:8, scrollbarWidth:'none', msOverflowStyle:'none'}}>
               {/* show merged recent incomes+expenses */}
               {(() => {
                 const merged = [

@@ -22,7 +22,9 @@ export default function ExpensesPage({ expenses, onAdd, onDelete, loading, savin
       </div>
         </div>
         <div style={{flex:1}}>
-          <TransactionsList items={expenses} onDelete={(item) => onDelete(item._id || item.id)} loading={loading} />
+          <div style={{maxHeight:500, overflowY:'auto', scrollbarWidth:'none', msOverflowStyle:'none'}}>
+            <TransactionsList items={expenses} onDelete={(item) => onDelete(item._id || item.id)} loading={loading} />
+          </div>
         </div>
       </div>
     </Wrapper>
