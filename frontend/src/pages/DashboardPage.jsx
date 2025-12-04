@@ -44,7 +44,7 @@ export default function DashboardPage({ incomes, expenses, loading, onDeleteInco
                   ...incomes.map(i => ({...i, _kind: 'income'})),
                   ...expenses.map(e => ({...e, _kind: 'expense'}))
                 ].sort((a,b)=> new Date(b.date) - new Date(a.date));
-                const recent = merged.slice(0,5);
+                const recent = merged.slice(0,10);
                 return (
                   <TransactionsList items={recent} loading={loading} />
                 );
