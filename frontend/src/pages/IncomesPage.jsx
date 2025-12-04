@@ -22,7 +22,7 @@ export default function IncomesPage({ incomes, onAdd, onDelete, loading, saving 
       </div>
         </div>
         <div style={{flex:1}}>
-          <div style={{maxHeight:500, overflowY:'auto', scrollbarWidth:'none', msOverflowStyle:'none'}}>
+          <div style={{maxHeight:500, overflowY:'auto'}}>
             <TransactionsList items={incomes} onDelete={(item) => onDelete(item._id || item.id)} loading={loading} />
           </div>
         </div>
