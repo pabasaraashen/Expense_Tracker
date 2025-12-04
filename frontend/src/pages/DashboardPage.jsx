@@ -27,9 +27,9 @@ export default function DashboardPage({ incomes, expenses, loading, onDeleteInco
 
   return (
     <Wrapper>
-      <Header>All Transactions</Header>
+      <Header>Dashboard</Header>
       <Row>
-        <Col style={{flex:2}}>
+        <Col style={{flex:1}}>
           <DashboardChart incomes={incomes} expenses={expenses} />
         </Col>
         <Col style={{flex:1}}>
@@ -43,10 +43,7 @@ export default function DashboardPage({ incomes, expenses, loading, onDeleteInco
               ].sort((a,b)=> new Date(b.date) - new Date(a.date));
               const recent = merged.slice(0,5);
               return (
-                <TransactionsList items={recent} onDelete={(item) => {
-                  if(item._kind === 'income') return onDeleteIncome(item._id || item.id);
-                  return onDeleteExpense(item._id || item.id);
-                }} />
+                <TransactionsList items={recent} loading={loading} />
               );
             })()}
           </div>
@@ -74,6 +71,7 @@ export default function DashboardPage({ incomes, expenses, loading, onDeleteInco
           <div style={{fontSize:32, fontWeight:800, color: balance<0? '#ff4d4f':'#42AD00'}}>${balance}</div>
         </div>
       </div>
+      
     </Wrapper>
   );
 }
