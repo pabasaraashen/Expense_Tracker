@@ -15,13 +15,28 @@ export default function IncomeForm({ onSubmit, loading }){
   };
 
   return (
-    <form onSubmit={submit} style={{display:'flex',flexDirection:'column',gap:8}}>
-      <label>Title<input value={title} onChange={e=>setTitle(e.target.value)} /></label>
-      <label>Amount<input value={amount} onChange={e=>setAmount(e.target.value)} type="number" /></label>
-      <label>Category<input value={category} onChange={e=>setCategory(e.target.value)} /></label>
-      <label>Description<input value={description} onChange={e=>setDescription(e.target.value)} /></label>
-      <label>Date<input value={date} onChange={e=>setDate(e.target.value)} type="date" /></label>
-      <button type="submit" disabled={loading} style={{padding:8}}>{loading? 'Saving...':'Add Income'}</button>
+    <form onSubmit={submit} style={{display:'flex',flexDirection:'column',gap:12}}>
+      <label style={{fontSize:16, fontWeight:600, display:'flex', flexDirection:'column', gap:4}}>
+        Title
+        <input value={title} onChange={e=>setTitle(e.target.value)} style={{fontSize:16, padding:'8px 10px'}} />
+      </label>
+      <label style={{fontSize:16, fontWeight:600, display:'flex', flexDirection:'column', gap:4}}>
+        Amount
+        <input value={amount} onChange={e=>setAmount(e.target.value)} type="number" style={{fontSize:16, padding:'8px 10px'}} />
+      </label>
+      <label style={{fontSize:16, fontWeight:600, display:'flex', flexDirection:'column', gap:4}}>
+        Category
+        <input value={category} onChange={e=>setCategory(e.target.value)} style={{fontSize:16, padding:'8px 10px'}} />
+      </label>
+      <label style={{fontSize:16, fontWeight:600, display:'flex', flexDirection:'column', gap:4}}>
+        Description
+        <input value={description} onChange={e=>setDescription(e.target.value)} style={{fontSize:16, padding:'8px 10px'}} />
+      </label>
+      <label style={{fontSize:16, fontWeight:600, display:'flex', flexDirection:'column', gap:4}}>
+        Date
+        <input value={date} onChange={e=>setDate(e.target.value)} type="date" style={{fontSize:16, padding:'8px 10px'}} />
+      </label>
+      <button type="submit" disabled={loading} style={{padding:'10px 16px', background:'#1706cf', color:'#fff', fontSize:16, fontWeight:700}}>{loading? 'Saving...':'Add Income'}</button>
     </form>
   );
 }
