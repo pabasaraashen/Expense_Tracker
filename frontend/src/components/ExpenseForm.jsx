@@ -36,7 +36,7 @@ export default function ExpenseForm({ onSubmit, loading }){
         Date
         <input value={date} onChange={e=>setDate(e.target.value)} type="date" style={{fontSize:16, padding:'8px 10px'}} />
       </label>
-      <button type="submit" disabled={loading} style={{padding:'10px 16px', background:'#1706cf', color:'#fff', fontSize:16, fontWeight:700}}>{loading? 'Saving...':'Add Expense'}</button>
+      <button type="submit" disabled={loading} style={{padding:'10px 16px', background:'#1a1a1a', color:'#fff', fontSize:16, fontWeight:700}}>{loading? 'Saving...':'Add Expense'}</button>
     </form>
   );
 }
