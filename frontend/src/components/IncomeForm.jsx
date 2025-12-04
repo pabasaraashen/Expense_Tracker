@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 
 export default function IncomeForm({ onSubmit, loading }){
-  const [title, setTitle] = useState('Salary');
+  const [title, setTitle] = useState('');
   const [amount, setAmount] = useState('');
   const [date, setDate] = useState(new Date().toISOString().slice(0,10));
-  const [category, setCategory] = useState('Salary');
+  const [category, setCategory] = useState('');
   const [description, setDescription] = useState('');
 
   const submit = (e) =>{
