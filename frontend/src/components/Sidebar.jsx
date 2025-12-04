@@ -35,7 +35,7 @@ const Avatar = styled.div`
 `;
 
 const Name = styled.div`
-  font-weight:700; color:var(--text);
+  font-weight:800; color:var(--text);
 `;
 
 const Menu = styled.nav`
@@ -59,7 +59,7 @@ export default function Sidebar(){
 
       <Menu>
         <MenuItem to="/"> Dashboard</MenuItem>
-        <MenuItem to="/transactions"> View Transactions</MenuItem>
+        <MenuItem to="/transactions"> Transactions</MenuItem>
         <MenuItem to="/incomes"> Incomes</MenuItem>
         <MenuItem to="/expenses"> Expenses</MenuItem>
       </Menu>
