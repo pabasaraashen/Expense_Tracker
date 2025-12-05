@@ -15,28 +15,28 @@ export default function ExpenseForm({ onSubmit, loading }){
   };
 
   return (
-    <form onSubmit={submit} style={{display:'flex',flexDirection:'column',gap:12}}>
-      <label style={{fontSize:16, fontWeight:600, display:'flex', flexDirection:'column', gap:4}}>
-        Title
-        <input value={title} onChange={e=>setTitle(e.target.value)} style={{fontSize:16, padding:'8px 10px'}} />
-      </label>
-      <label style={{fontSize:16, fontWeight:600, display:'flex', flexDirection:'column', gap:4}}>
-        Amount
-        <input value={amount} onChange={e=>setAmount(e.target.value)} type="number" style={{fontSize:16, padding:'8px 10px'}} />
-      </label>
-      <label style={{fontSize:16, fontWeight:600, display:'flex', flexDirection:'column', gap:4}}>
-        Category
-        <input value={category} onChange={e=>setCategory(e.target.value)} style={{fontSize:16, padding:'8px 10px'}} />
-      </label>
-      <label style={{fontSize:16, fontWeight:600, display:'flex', flexDirection:'column', gap:4}}>
-        Description
-        <input value={description} onChange={e=>setDescription(e.target.value)} style={{fontSize:16, padding:'8px 10px'}} />
-      </label>
-      <label style={{fontSize:16, fontWeight:600, display:'flex', flexDirection:'column', gap:4}}>
-        Date
-        <input value={date} onChange={e=>setDate(e.target.value)} type="date" style={{fontSize:16, padding:'8px 10px'}} />
-      </label>
-      <button type="submit" disabled={loading} style={{padding:'10px 16px', background:'#1a1a1a', color:'#fff', fontSize:16, fontWeight:700}}>{loading? 'Saving...':'Add Expense'}</button>
+    <form onSubmit={submit} className="d-flex flex-column gap-3">
+      <div className="mb-2">
+        <label className="form-label fw-semibold">Title</label>
+        <input value={title} onChange={e=>setTitle(e.target.value)} className="form-control" style={{fontSize:16}} />
+      </div>
+      <div className="mb-2">
+        <label className="form-label fw-semibold">Amount</label>
+        <input value={amount} onChange={e=>setAmount(e.target.value)} type="number" className="form-control" style={{fontSize:16}} />
+      </div>
+      <div className="mb-2">
+        <label className="form-label fw-semibold">Category</label>
+        <input value={category} onChange={e=>setCategory(e.target.value)} className="form-control" style={{fontSize:16}} />
+      </div>
+      <div className="mb-2">
+        <label className="form-label fw-semibold">Description</label>
+        <input value={description} onChange={e=>setDescription(e.target.value)} className="form-control" style={{fontSize:16}} />
+      </div>
+      <div className="mb-2">
+        <label className="form-label fw-semibold">Date</label>
+        <input value={date} onChange={e=>setDate(e.target.value)} type="date" className="form-control" style={{fontSize:16}} />
+      </div>
+      <button type="submit" disabled={loading} className="btn btn-dark fw-bold" style={{fontSize:16}}>{loading? 'Saving...':'Add Expense'}</button>
     </form>
   );
 }

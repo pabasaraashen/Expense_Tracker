@@ -1,24 +1,23 @@
 import React from 'react';
 
 export default function TransactionsList({ items=[], onDelete, loading }){
-  if(loading) return <div style={{padding:16}}>Loading...</div>;
-  if(!items.length) return <div style={{padding:16}}>No items</div>;
+  if(loading) return <div className="p-3">Loading...</div>;
+  if(!items.length) return <div className="p-3">No items</div>;
 
   return (
-    <div>
+    <div className="list-group">
       {items.map(it=> (
-        <div key={it._id || it.id} style={{display:'flex',justifyContent:'space-between', padding:'12px 8px', borderBottom:'1px solid #f0f0f0'}}>
+        <div key={it._id || it.id} className="list-group-item d-flex justify-content-between align-items-center border-bottom">
           <div>
-            <div style={{display:'flex', alignItems:'center', gap:10}}>
-              <div style={{fontWeight:700, fontSize:18}}>{it.title}</div>
-              
+            <div className="d-flex align-items-center gap-2">
+              <div className="fw-bold" style={{fontSize:18}}>{it.title}</div>
             </div>
-            <div style={{fontSize:14, color:'var(--muted)'}}>{new Date(it.date).toLocaleDateString()}</div>
+            <div className="text-muted" style={{fontSize:14}}>{new Date(it.date).toLocaleDateString()}</div>
           </div>
-          <div style={{display:'flex', gap:200, alignItems:'center'}}>
-            <div style={{fontWeight:800, fontSize:18}}>${it.amount}</div>
+          <div className="d-flex align-items-center" style={{gap:200}}>
+            <div className="fw-bolder" style={{fontSize:18}}>${it.amount}</div>
               {onDelete && (
-                <button onClick={()=> onDelete(it)} style={{padding:'6px 10px', background:'#cf0606', color:'#fff', border:'none', borderRadius:8, cursor:'pointer'}}>Delete</button>
+                <button onClick={()=> onDelete(it)} className="btn btn-sm rounded-2" style={{background:'#cf0606', color:'#fff', border:'none'}}>Delete</button>
               )}
           </div>
         </div>

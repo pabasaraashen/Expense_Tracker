@@ -1,3 +1,5 @@
+@import 'bootstrap/dist/css/bootstrap.min.css';
+
 :root{
   --font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   --bg: #f6f7fb;
@@ -24,11 +26,13 @@ body{
 a{color:var(--accent); text-decoration:none}
 a:hover{opacity:0.95}
 
-button{
-  border-radius:8px;border:1px solid transparent;padding:0.6em 1.2em;font-size:1rem;font-weight:600;
-  background:var(--btn-bg);cursor:pointer
+.hide-scrollbar::-webkit-scrollbar { display: none; }
+.hide-scrollbar { scrollbar-width: none; -ms-overflow-style: none; }
+
+.active-link {
+  background: #efe7f6 !important;
+  color: var(--text) !important;
 }
-button:hover{opacity:0.95}
 
 @media (max-width:900px){
   body{padding:12px}
