@@ -173,7 +173,7 @@ Expense_Tracker/
 npm run build
 # Deploy the dist folder
 ```
-## Project UI
+## Project
 
 
 
