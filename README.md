@@ -173,12 +173,6 @@ Expense_Tracker/
 - Date must be in valid date format
 - Category and description cannot be empty
 
-## 📱 Responsive Breakpoints
-
-- Mobile: < 600px
-- Tablet: 600px - 900px
-- Desktop: > 900px
-
 ## 🎯 Key Features Explained
 
 ### Real-Time Dashboard
