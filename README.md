@@ -174,33 +174,5 @@ npm run build
 # Deploy the dist folder
 ```
 
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit changes (`git commit -m 'Add AmazingFeature'`)
-4. Push to branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-## 📝 License
-
-This project is open source and available under the MIT License.
-
-## 👤 Author
-
-**Pabasara Ashen**
-- GitHub: [@pabasaraashen](https://github.com/pabasaraashen)
-
-## 🙌 Support
-
-If you found this project helpful, please consider giving it a ⭐ on GitHub!
-
-## 📧 Contact
-
-For questions or suggestions, feel free to reach out or open an issue on the repository.
-
----
-
-**Happy Expense Tracking! 💰**
 
 
