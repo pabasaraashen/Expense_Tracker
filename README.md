@@ -174,10 +174,21 @@ npm run build
 # Deploy the dist folder
 ```
 ## Project
-<img width="1920" height="1080" alt="Screenshot (161)" src="https://github.com/user-attachments/assets/f31b193d-781f-4a6b-ae41-042ed6a4fe70" />
-<img width="1920" height="1080" alt="Screenshot (162)" src="https://github.com/user-attachmen<img width="1920" height="1080" alt="Screenshot (163)" src="https://github.com/user-attachments/assets/1a77186f-ee89-44b6-b808-c3d8c810aa75" />
+<img width="1920" height="1080" alt="Screenshot (161)" src="https://github.com/user-attachments/assets/22cdbb66-a5fe-4a1d-983a-20232ac353dd" />
 
-<img width="1920" height="1080" alt="Screenshot (164)" src="https://github.com/user-attachments/assets/8c066348-9904-4d51-8244-ec22c9ecb7a2" />
+<img width="1920" height="1080" alt="Screenshot (162)" src="https://github.com/user-attachments/assets/76809b84-c8e5-4e3f-b819-964c3f4e4900" />
 
+<img width="1920" height="1080" alt="Screenshot (163)" src="https://github.com/user-attachments/assets/797e47f9-de6a-4108-a6d5-7e22300c74cf" />
 
+<img width="1920" height="1080" alt="Screenshot (164)" src="https://github.com/user-attachments/assets/cf3bf2f4-3773-4ab4-885d-b3cb2a4d6a08" />
+
+## Postman API testing
+<img width="1920" height="1080" alt="Screenshot (165)" src="https://github.com/user-attachments/assets/50abc294-42bd-4298-a142-4c62a7f1d210" />
+
+<img width="1920" height="1080" alt="Screenshot (166)" src="https://github.com/user-attachments/assets/43c794a1-e1f7-4cfc-916a-a0ee2f353c0f" />
+
+## MongoDB Database
+<img width="1920" height="1080" alt="Screenshot (167)" src="https://github.com/user-attachments/assets/f391c70b-3bc5-43db-ac47-78e24331f77b" />
+
+<img width="1920" height="1080" alt="Screenshot (168)" src="https://github.com/user-attachments/assets/3fae1d20-3764-4c86-9114-6c18722c8b90" />
 
