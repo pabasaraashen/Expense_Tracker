@@ -174,12 +174,6 @@ npm run build
 # Deploy the dist folder
 ```
 
-### Backend (Heroku/Railway/Render)
-```bash
-# Set environment variables in deployment platform
-# Deploy the backend directory
-```
-
 ## 🤝 Contributing
 
 1. Fork the repository
