@@ -166,13 +166,6 @@ Expense_Tracker/
 3. **Expenses** - Add and manage expense transactions
 4. **Transactions** - View all transactions in one place
 
-## 🔐 Validation
-
-- All transaction fields are required: `title`, `amount`, `date`, `category`, `description`
-- Amount must be a valid number
-- Date must be in valid date format
-- Category and description cannot be empty
-
 ## 🎯 Key Features Explained
 
 ### Real-Time Dashboard
