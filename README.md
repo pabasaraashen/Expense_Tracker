@@ -166,24 +166,6 @@ Expense_Tracker/
 3. **Expenses** - Add and manage expense transactions
 4. **Transactions** - View all transactions in one place
 
-## 🎯 Key Features Explained
-
-### Real-Time Dashboard
-- Displays total income, total expense, and balance
-- Shows recent 10 transactions merged from both income and expenses
-- Interactive doughnut chart showing income vs expense ratio
-
-### Transaction Management
-- Dedicated pages for income and expenses
-- Form validation with required fields
-- Delete functionality with immediate UI update
-- Transaction list with date, amount, and delete options
-
-### Data Persistence
-- All data stored in MongoDB Atlas cloud database
-- Automatic data synchronization across all pages
-- Persistent storage across browser sessions
-
 ## 🚀 Deployment
 
 ### Frontend (Vercel/Netlify)
