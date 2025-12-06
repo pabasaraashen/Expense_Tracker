@@ -1,4 +1,3 @@
-# Expense_Tracker
 # Expense Tracker
 
 A full-stack web application for managing personal finances with real-time expense and income tracking, interactive visualizations, and cloud-based data persistence.
