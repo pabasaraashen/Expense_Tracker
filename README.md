@@ -174,6 +174,10 @@ npm run build
 # Deploy the dist folder
 ```
 ## Project
+<img width="1920" height="1080" alt="Screenshot (161)" src="https://github.com/user-attachments/assets/f31b193d-781f-4a6b-ae41-042ed6a4fe70" />
+<img width="1920" height="1080" alt="Screenshot (162)" src="https://github.com/user-attachmen<img width="1920" height="1080" alt="Screenshot (163)" src="https://github.com/user-attachments/assets/1a77186f-ee89-44b6-b808-c3d8c810aa75" />
+
+<img width="1920" height="1080" alt="Screenshot (164)" src="https://github.com/user-attachments/assets/8c066348-9904-4d51-8244-ec22c9ecb7a2" />
 
 
 
